@@ -1,0 +1,3 @@
+# Subtle Error with Auxiliary Constructor in Scala
+
+This example highlights a potential pitfall when using auxiliary constructors in Scala.  The primary constructor initializes the `x` parameter, but the auxiliary constructor `this()` defaults `x` to 0. If the programmer doesn't explicitly address the parameter in the auxiliary constructor, it could lead to unexpected behavior if `x` is used in methods within the class.
